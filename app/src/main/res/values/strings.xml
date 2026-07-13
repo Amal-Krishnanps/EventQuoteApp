@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">EventQuote</string>
+    <string name="app_description">Professional Event Management Quotations</string>
+
+    <!-- Navigation labels -->
+    <string name="nav_dashboard">Dashboard</string>
+    <string name="nav_new_estimate">New Estimate</string>
+    <string name="nav_saved_estimates">Saved Estimates</string>
+    <string name="nav_company_settings">Company Settings</string>
+    <string name="nav_services_master">Services Master</string>
+    <string name="nav_backup">Backup &amp; Restore</string>
+    <string name="nav_about">About</string>
+
+    <!-- Common -->
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="add">Add</string>
+    <string name="search">Search</string>
+    <string name="confirm">Confirm</string>
+    <string name="close">Close</string>
+    <string name="ok">OK</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <!-- Company Settings -->
+    <string name="company_name">Company Name</string>
+    <string name="company_logo">Company Logo</string>
+    <string name="company_address">Address</string>
+    <string name="company_phone">Phone Number</string>
+    <string name="company_whatsapp">WhatsApp Number</string>
+    <string name="company_email">Email Address</string>
+    <string name="company_gst">GST Number (Optional)</string>
+    <string name="company_website">Website (Optional)</string>
+    <string name="company_bank_details">Bank Details</string>
+    <string name="company_qr_code">Payment QR Code (Optional)</string>
+    <string name="company_signature">Signature Image</string>
+
+    <!-- Estimate -->
+    <string name="estimate_number">Estimate Number</string>
+    <string name="quotation_date">Quotation Date</string>
+    <string name="validity_date">Valid Until</string>
+    <string name="customer_details">Customer Details</string>
+    <string name="event_details">Event Details</string>
+    <string name="services">Services</string>
+    <string name="amount_summary">Amount Summary</string>
+    <string name="advance_payment">Advance Payment</string>
+    <string name="terms_conditions">Terms &amp; Conditions</string>
+
+    <!-- Customer -->
+    <string name="customer_name">Customer Name</string>
+    <string name="customer_address">Address</string>
+    <string name="customer_city">City</string>
+    <string name="customer_district">District</string>
+    <string name="customer_state">State</string>
+    <string name="customer_pincode">Pincode</string>
+    <string name="customer_mobile">Mobile Number</string>
+    <string name="customer_whatsapp">WhatsApp Number</string>
+    <string name="customer_email">Email (Optional)</string>
+
+    <!-- Event -->
+    <string name="event_type">Event Type</string>
+    <string name="function_date">Function Date</string>
+    <string name="function_time">Function Time</string>
+    <string name="venue_name">Venue Name</string>
+    <string name="venue_address">Venue Address</string>
+    <string name="event_coordinator">Event Coordinator</string>
+    <string name="guest_count">Expected Guest Count</string>
+    <string name="event_notes">Notes</string>
+
+    <!-- PDF Actions -->
+    <string name="generate_pdf">Generate PDF</string>
+    <string name="share_whatsapp">Share via WhatsApp</string>
+    <string name="share_pdf">Share PDF</string>
+    <string name="print">Print</string>
+
+    <!-- Status -->
+    <string name="status_draft">Draft</string>
+    <string name="status_sent">Quotation Sent</string>
+    <string name="status_confirmed">Confirmed</string>
+    <string name="status_cancelled">Cancelled</string>
+    <string name="status_completed">Completed</string>
+
+    <!-- Errors -->
+    <string name="error_customer_name_required">Customer name is required</string>
+    <string name="error_phone_required">Mobile number is required</string>
+    <string name="error_venue_required">Venue name is required</string>
+    <string name="error_service_required">At least one service is required</string>
+    <string name="error_negative_amount">Amount cannot be negative</string>
+
+    <!-- Footer -->
+    <string name="pdf_footer">Thank you for choosing us. We look forward to making your event memorable!</string>
+</resources>

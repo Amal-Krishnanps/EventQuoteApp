@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <!-- For generated PDFs -->
+    <files-path name="pdfs" path="pdfs/" />
+    <!-- For exported backups -->
+    <files-path name="backups" path="backups/" />
+    <!-- For cached images -->
+    <cache-path name="images" path="images/" />
+    <!-- External storage for backups -->
+    <external-files-path name="external_files" path="." />
+</paths>

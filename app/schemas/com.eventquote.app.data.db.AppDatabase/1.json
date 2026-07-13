@@ -1,0 +1,398 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "0ec81813d85ad8fb53b8251bd1761d24",
+    "entities": [
+      {
+        "tableName": "company_settings",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER NOT NULL, `name` TEXT NOT NULL, `logoPath` TEXT NOT NULL, `address` TEXT NOT NULL, `phone` TEXT NOT NULL, `whatsAppNumber` TEXT NOT NULL, `email` TEXT NOT NULL, `gstNumber` TEXT NOT NULL, `website` TEXT NOT NULL, `bankName` TEXT NOT NULL, `accountNumber` TEXT NOT NULL, `ifscCode` TEXT NOT NULL, `accountHolderName` TEXT NOT NULL, `qrCodePath` TEXT NOT NULL, `signaturePath` TEXT NOT NULL, `defaultTerms` TEXT NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "logoPath",
+            "columnName": "logoPath",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "address",
+            "columnName": "address",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "phone",
+            "columnName": "phone",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "whatsAppNumber",
+            "columnName": "whatsAppNumber",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "email",
+            "columnName": "email",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "gstNumber",
+            "columnName": "gstNumber",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "website",
+            "columnName": "website",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "bankName",
+            "columnName": "bankName",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "accountNumber",
+            "columnName": "accountNumber",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ifscCode",
+            "columnName": "ifscCode",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "accountHolderName",
+            "columnName": "accountHolderName",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "qrCodePath",
+            "columnName": "qrCodePath",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "signaturePath",
+            "columnName": "signaturePath",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "defaultTerms",
+            "columnName": "defaultTerms",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "estimates",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `estimateNumber` TEXT NOT NULL, `quotationDate` INTEGER NOT NULL, `validityDate` INTEGER NOT NULL, `customerName` TEXT NOT NULL, `customerAddress` TEXT NOT NULL, `customerCity` TEXT NOT NULL, `customerDistrict` TEXT NOT NULL, `customerState` TEXT NOT NULL, `customerPincode` TEXT NOT NULL, `customerMobile` TEXT NOT NULL, `customerWhatsApp` TEXT NOT NULL, `customerEmail` TEXT NOT NULL, `eventType` TEXT NOT NULL, `functionDate` INTEGER NOT NULL, `functionTime` TEXT NOT NULL, `venueName` TEXT NOT NULL, `venueAddress` TEXT NOT NULL, `eventCoordinator` TEXT NOT NULL, `guestCount` INTEGER NOT NULL, `eventNotes` TEXT NOT NULL, `services` TEXT NOT NULL, `discountType` TEXT NOT NULL, `discountValue` REAL NOT NULL, `taxEnabled` INTEGER NOT NULL, `taxRate` REAL NOT NULL, `advancePayments` TEXT NOT NULL, `termsConditions` TEXT NOT NULL, `notes` TEXT NOT NULL, `attachments` TEXT NOT NULL, `status` TEXT NOT NULL, `templateId` TEXT NOT NULL, `createdAt` INTEGER NOT NULL, `updatedAt` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "estimateNumber",
+            "columnName": "estimateNumber",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "quotationDate",
+            "columnName": "quotationDate",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "validityDate",
+            "columnName": "validityDate",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "customerName",
+            "columnName": "customerName",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "customerAddress",
+            "columnName": "customerAddress",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "customerCity",
+            "columnName": "customerCity",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "customerDistrict",
+            "columnName": "customerDistrict",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "customerState",
+            "columnName": "customerState",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "customerPincode",
+            "columnName": "customerPincode",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "customerMobile",
+            "columnName": "customerMobile",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "customerWhatsApp",
+            "columnName": "customerWhatsApp",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "customerEmail",
+            "columnName": "customerEmail",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "eventType",
+            "columnName": "eventType",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "functionDate",
+            "columnName": "functionDate",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "functionTime",
+            "columnName": "functionTime",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "venueName",
+            "columnName": "venueName",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "venueAddress",
+            "columnName": "venueAddress",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "eventCoordinator",
+            "columnName": "eventCoordinator",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "guestCount",
+            "columnName": "guestCount",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "eventNotes",
+            "columnName": "eventNotes",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "services",
+            "columnName": "services",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "discountType",
+            "columnName": "discountType",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "discountValue",
+            "columnName": "discountValue",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "taxEnabled",
+            "columnName": "taxEnabled",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "taxRate",
+            "columnName": "taxRate",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "advancePayments",
+            "columnName": "advancePayments",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "termsConditions",
+            "columnName": "termsConditions",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "notes",
+            "columnName": "notes",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "attachments",
+            "columnName": "attachments",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "status",
+            "columnName": "status",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "templateId",
+            "columnName": "templateId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createdAt",
+            "columnName": "createdAt",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "updatedAt",
+            "columnName": "updatedAt",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "service_masters",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `name` TEXT NOT NULL, `description` TEXT NOT NULL, `defaultAmount` REAL NOT NULL, `isFavorite` INTEGER NOT NULL, `sortOrder` INTEGER NOT NULL, `defaultSubItems` TEXT NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "description",
+            "columnName": "description",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "defaultAmount",
+            "columnName": "defaultAmount",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isFavorite",
+            "columnName": "isFavorite",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "sortOrder",
+            "columnName": "sortOrder",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "defaultSubItems",
+            "columnName": "defaultSubItems",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '0ec81813d85ad8fb53b8251bd1761d24')"
+    ]
+  }
+}
